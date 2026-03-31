@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Movie Detail Page</title>
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			backgroung: linear-gradient(to right, #141e30, #243b55);
-			font-family: Aria, sans-serif;
-			color: white;
-		}
+    <meta charset="UTF-8">
+    <title>Movie Detail Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #141e30, #243b55);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
 
-		.container{
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			height: 100vh;
-		}
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
-		.moviePic:hover {
-			transform: scale(1.05);
-		}
+        .moviePic {
+            height: 400px;
+            width: 270px;
+            opacity: 0.9;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease;
+        }
 
-		.movieDetail {
-			position: relative;
-			top: 30px;
-			width: 60%;
-			text-align: center;
-			font-size: 18px;
-			line-height: 1.6px;
-			background: rgba(0,0,0,0.5);
-			padding: 15px;
-			border-radius: 10px;
-		}
-	</style>
-</head>	
+        .moviePic:hover {
+            transform: scale(1.05);
+        }
+
+        .movieDetail {
+            position: relative;
+            top: 30px;
+            width: 60%;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
 <body>
-	<div clas="container">
-		<img class="moviePic" src="https://via.placeholder.com/270x400" alt="Movie Poster">
 
-		<p class="movieDetail">
-			 In a world where dreams blur with reality, a skilled thief is given a chance at redemption 
+    <div class="container">
+        <img class="moviePic" src="https://via.placeholder.com/270x400" alt="Movie Poster">
+
+        <p class="movieDetail">
+            In a world where dreams blur with reality, a skilled thief is given a chance at redemption 
             if he can successfully perform inception — planting an idea into someone's mind. 
             As he navigates layered dreamscapes, he faces his past, testing the limits of perception, memory, and guilt.
-			
-		</p>
-	</div>
+        </p>
+    </div>
+
 </body>
-</html>	
+</html>
